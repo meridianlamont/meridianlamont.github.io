@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juniper FX Media</title>
+        <link rel="stylesheet" href="../css/main.css">
+
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img id="logo" src="../images/logo.png"/>
+                </div>
+
+                <div id='nav'>
+                
+                <img id="mobile-cta" class="mobile-menu" src="../images/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="../images/exit.svg" alt="Close Navigation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="../html/index.html">Home</a></li>
+                        <li><a href="../html/about_us.html">About Us</a></li>
+                    </ul>
+
+                    <ul class="secondary-nav">
+                        <li><a href="../html/links.html">Links Reference</a></li>
+                        <li class="consult-cta"><a href="../html/contact.html">Contact Us</a></li>
+                    </ul>
+                
+                    
+                </nav>
+            </div>
+        </div>
+
+        <section class="homepage-img">
+            <img id="homepage-image" class="homepage-img" src="../images/6.jpg" alt="videography work">
+        </section>
+
+        <section class = "about-us">
+            <img id = "leader" class="about-us" src="../images/leader_media.jpg">
+        </section>
+
+        <section class = "cam-photo">
+            <img id="cam-photo" class="cam-photo" src="../images/3.jpg">
+            </section>
+
+        <section class = "about-us-text">
+            <p>Juniper FX Media has been in the game for over 10 years. We've seen how media changes constantly and we are constantly evolving with it.
+                With an incredible crew, cutting edge techniques, top-of-the-line equipment and a heart for getting media right, it's no wonder Juniper is 
+                the media management choice for so many.</p>
+
+            <p>Started in 2012 by two sisters, this management company has grown into a multi-million dollar production crew. And our founders knew what to
+                do when COVID-19 hit. They immediately mobilized to ensure that Juniper could take care of any Livestream needs for all the functions we had.
+                This has proven to be something that is allowing more accessibility for people as well as an increased reach. </p>
+
+                <p>So, what are you waiting for? Schedule a consultation today and we'll help tailor our buiness to your needs! It'll be the 
+                    best rest you've gotten when managing your media.
+            </p>
+        </section>
+     
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta')
+                nav= document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit');
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+        
+        </script>
+
+    </body>
+</html>
