@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+:root {
+  --primary-color: #490072;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+#logo {
+  width:300px;
+  height: auto;
+  margin-top: -50px;
+}
+
+.navbar {
+  background: white;
+  padding: 2em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar.container.logo { 
+  float: left;
+  display: inline-block;
+  scale: 25%;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+
+
+a {
+  color: #444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  box-align: center;
+}
+
+.portfolio {
+    text-align: center;
+    font-size: 2em;
+    margin-top: -5em;
+}
+
+.videography {
+    margin-top: -15em;
+}
+
+.waymaker {
+  width: 30em;
+  height: 20em;
+  position: center;
+  margin-top: -4em;
+}
+
+.juicy {
+    margin-left: 0;
+    width: 30em;
+    height: 20em;
+    position: center;
+    margin-top: -4em;
+}
+
+.anotherin {
+    margin-left: 0;
+    width: 30em;
+    height: 20em;
+    position: center;
+    margin-top: -4em;
+}
+
+.graphic {
+  margin-bottom:8em;
+  margin-left: -2em;
+}
+
+.services-text {
+  text-align: center;
+    font-size: 2em;
+    margin-top: -15em;
+}
+
+.row {box-sizing: border-box;}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 9px;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.rowvid {box-sizing: border-box;}
+
+.columnvid {
+  float: left;
+  width: 30%;
+  padding: 5px;
+  }
+
+/* Clear floats after the columns */
+.rowvid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@media (min-width: 1100px) {
+
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0em;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.consult-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -.2em;
+  }
+  .navbar nav li.consult-cta a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 320px) {
+  
+  .portfolio {
+    font-size: 15px;
+    margin-bottom: 2em;
+  }
+
+  #graphic {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .portfolio {
+    font-size: 20px;
+    margin-bottom: 2em;
+  }
+  #graphic {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 481) and (max-width: 1000px) {
+
+  .waymaker {
+    height: 10em;
+    width: 20em;
+  }
+
+  .juicy {
+    height: 10em;
+    width: 20em;
+    margin-top: 10em;
+    margin-left: 0em;
+  }
+
+  .anotherin {
+    height: 10em;
+    width: 20em;
+    margin-left: 0em;
+    margin-top: 5em;
+  }
+  #graphic {
+    display:none;
+  }
+
+}
+
+
+@media screen and (max-width: 1768px) {
+
+  #graphic {
+    display:none;
+  }
+
+  .services-text {
+    font-size: 25px;
+    margin-bottom: 2em;
+    margin-top: -10em;
+    margin-bottom: -5em;
+  }
+
+
+  .videography {
+    transform: translate(50%, 50%);
+    margin-right: 5em;
+  }
+
+  .column {
+    width: 100%;
+    font-size: smaller;
+  }
+
+  .columnvid {
+    width: 100%;
+    margin-bottom: 5em;
+    margin-left: -15em;
+    margin-right:15em;
+    transform: translate(50%, 50%);
+  }
+  
+
+  .portfolio {
+    font-size: 25px;
+    margin-bottom: 2em;
+  }
+  
+
+}
+
+  
